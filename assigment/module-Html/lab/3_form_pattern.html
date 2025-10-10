@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table align="center"></table>
+
+    <form action="">
+        <tr>
+            <td><label for="">Full name:</label></td>
+            <td><input type="text" pattern="[A-Za-z]{3,8}" placeholder="Enter Your Name" required></td><br>
+        </tr>
+        <tr>
+            <td><label for="">Enter your Email</label></td>
+            <td><input type="email" placeholder="Enter your Email" required></td><br>
+        </tr>
+        <tr>
+            <td><label for="">Enter your phone</label></td>
+            <td><input type="tel" pattern="[6789]+[0-9]{9}" maxlength="10" placeholder="Enter your Number" required></td><br>
+        </tr>
+        <tr>
+            <td><label for="subject">Subject:</label></td>
+            <td><select id="subject" name="subject">
+            <option value="">-- Select a Subject --</option>
+             <option value="general">General Inquiry</option>
+            <option value="support">Customer Support</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+            </select><br>
+        <tr>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." minlength="10"
+            maxlength="500" required></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
