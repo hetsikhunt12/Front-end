@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage Example</title>
+  <style>
+
+    .main {
+      background-color: #f9fafb;
+      color: #333333;
+    }
+
+    nav {
+      background-color: #0076b6fe;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    nav .logo {
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .column {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.164);
+      padding: 10px;
+    }
+
+    .column h2 {
+      color: #115b83;
+      margin-bottom: 10px;
+    }
+
+    .column p {
+      padding: 5px;
+    }
+
+    footer {
+      background-color: #023d8ad7;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* ===== Responsive Design ===== */
+    @media (max-width: 768px) {
+      nav {
+        align-items: center;
+        text-align: center;
+      }
+
+      nav ul {
+        margin: 10px;
+      }
+
+      .content {
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .column {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>MyWebsite</h2>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <div class="column 1">
+      <h2>Column 1</h2>
+      <p>This is the first content column. You can add any information, articles, or images here. The layout is
+        responsive, so on smaller screens, these columns will stack vertically for better readability.
+      </p>
+    </div>
+
+    <div class="column 2">
+      <h2>Column 2</h2>
+      <p>This is the second content column. Using CSS Flexbox and media queries ensures that the design adapts smoothly
+        across different screen sizes and devices.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Webpage design</p>
+  </footer>
+
+</body>
+
+</html>

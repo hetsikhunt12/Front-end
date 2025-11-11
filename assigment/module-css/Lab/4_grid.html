@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Product Grid</title>
+    <style>
+        .main {
+            background-color: #f7f8f98e;
+            margin: 0;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #131313;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #6d6a6a33;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.43);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            color: #333333;
+        }
+
+        .card p {
+            color: #4b7db3;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Products</h1>
+
+    <div class="product-grid">
+        <div class="card">
+            <img src="https://images.pexels.com/photos/5081386/pexels-photo-5081386.jpeg" alt="Product 1">
+            <h3>Wireless Headphones</h3>
+            <p>₹1,499</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/393047/pexels-photo-393047.jpeg" alt="">
+            <h3>Smart Watch</h3>
+            <p>₹2,999</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/4790267/pexels-photo-4790267.jpeg" alt="">
+            <h3>Bluetooth Speaker</h3>
+            <p>₹1,299</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/24347621/pexels-photo-24347621.jpeg" alt="">
+            <h3>web camera</h3>
+            <p>₹1499</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg" alt="">
+            <h3>Gaming Mouse</h3>
+            <p>₹1099</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/30166652/pexels-photo-30166652.jpeg" alt="">
+            <h3>Ceramic Coffee Mug</h3>
+            <p>899</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/5208777/pexels-photo-5208777.jpeg" alt="">
+            <h3>Power Bank</h3>
+            <p>₹1,499</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/5083491/pexels-photo-5083491.jpeg" alt="">
+            <h3>Wireless Charger</h>
+                <p>₹559</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg" alt="">
+            <h3>Desk Lamp</h3>
+            <p>₹700</p>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
