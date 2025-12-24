@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+
+        .main {
+            background-color: #f0f2f5fa;
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+
+        #contactForm {
+            background-color: #f0f8ff;
+            width: 300px;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow:  0 0 10px rgba(0, 0, 0, 0.336);
+        }
+
+        .form-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 15px 0;
+            border: 1px solid #b9b3b3;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        #submitBtn {
+            background-color: #2182e9e9;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        #submitBtn:hover {
+            background-color: #5e7fa3;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Contact Us</h2>
+
+    <form id="contactForm" action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" class="form-field" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-field" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" class="form-field" rows="5" placeholder="Type your message"></textarea>
+
+        <input type="submit" id="submitBtn" value="Send Message">
+    </form>
+
+</body>
+
+</html>
