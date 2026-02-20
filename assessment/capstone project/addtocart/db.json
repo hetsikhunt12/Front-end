@@ -1,0 +1,31 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "name": "Mobile",
+      "price": "15000",
+      "category": "Electronic",
+      "offerprice": "14000",
+      "qty": "5",
+      "descriptions": "Android smartphone",
+      "added_date": "2026-02-15"
+    },
+    {
+      "id": "2",
+      "name": "Laptop",
+      "price": "60000",
+      "category": "Electronic",
+      "offerprice": "55000",
+      "qty": "3",
+      "descriptions": "Gaming laptop",
+      "added_date": "2026-02-15"
+    },
+    {
+      "id": "d028",
+      "name": "headphone",
+      "price": "6000",
+      "category": "wireless",
+      "added_date": "2026-02-15T15:33:26.807Z"
+    }
+  ]
+}
