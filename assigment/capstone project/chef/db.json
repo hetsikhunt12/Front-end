@@ -1,0 +1,85 @@
+{
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "name": "admin1",
+      "email": "admin1@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "user",
+      "email": "user@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "vishu",
+      "email": "vishu@gmail.com",
+      "password": "123456",
+      "status": "unblock"
+    },
+    {
+      "id": "3",
+      "name": "Himani",
+      "email": "himani@gmail.com",
+      "password": "4321",
+      "status": "block"
+    },
+    {
+      "id": "1748327947997",
+      "name": "shubhan jadav",
+      "email": "shubham@gmail.com",
+      "password": "654321",
+      "status": "unblock"
+    },
+    {
+      "id": "1748673197159",
+      "name": "rachana patel",
+      "email": "rachana@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    }
+  ],
+  "menu": [
+    {
+      "id": "1",
+      "img": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "breakfast",
+      "name": "bbq"
+    },
+    {
+      "id": "2",
+      "img": "https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "lunch",
+      "name": "bbq"
+    },
+    {
+      "id": "3",
+      "img": "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "Dinner",
+      "name": "bbq"
+    },
+    {
+      "id": "4",
+      "img": "https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "breakfast",
+      "name": "bbq"
+    },
+    {
+      "id": "1747726715421",
+      "name": "xyz",
+      "img": "https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "lunch"
+    }
+  ]
+}
