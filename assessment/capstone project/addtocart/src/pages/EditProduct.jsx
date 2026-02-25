@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { updateProduct } from "../features/productSlice";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function EditProduct(){
 
@@ -10,10 +10,20 @@ export default function EditProduct(){
   const dispatch = useDispatch();
 
   const product = useSelector(s =>
-    s.products.products.find(p=>p.id==id)
+    s.products.products.find(p => p.id == id)
   );
 
-  const [form,setForm] = useState(product);
+  const [form,setForm] = useState({
+    name:"",
+    price:"",
+    category:""
+  });
+
+  useEffect(()=>{
+    if(product){
+      setForm(product);
+    }
+  },[product]);
 
   const handleSubmit=(e)=>{
     e.preventDefault();
@@ -35,5 +45,3 @@ export default function EditProduct(){
     </form>
   );
 }
-
-
