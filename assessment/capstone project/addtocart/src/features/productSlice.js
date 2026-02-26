@@ -1,13 +1,14 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "axios";
 
-// API URL
-const API = "http://localhost:3000/product";
+const API = "http://localhost:3002/product";
+
 // GET
 export const getProducts = createAsyncThunk(
   "products/get",
   async () => {
-    const res = await fetch(API);
-    return await res.json();
+    const res = await axios.get(API);
+    return res.data;
   }
 );
 
@@ -15,12 +16,8 @@ export const getProducts = createAsyncThunk(
 export const addProduct = createAsyncThunk(
   "products/add",
   async (data) => {
-    const res = await fetch(API, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
-    return await res.json();
+    const res = await axios.post(API, data);
+    return res.data;
   }
 );
 
@@ -28,7 +25,7 @@ export const addProduct = createAsyncThunk(
 export const deleteProduct = createAsyncThunk(
   "products/delete",
   async (id) => {
-    await fetch(`${API}/${id}`, { method: "DELETE" });
+    await axios.delete(`${API}/${id}`);
     return id;
   }
 );
@@ -37,12 +34,8 @@ export const deleteProduct = createAsyncThunk(
 export const updateProduct = createAsyncThunk(
   "products/update",
   async ({ id, data }) => {
-    const res = await fetch(`${API}/${id}`, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
-    return await res.json();
+    const res = await axios.put(`${API}/${id}`, data);
+    return res.data;
   }
 );
 
@@ -50,37 +43,33 @@ const productSlice = createSlice({
   name: "products",
   initialState: {
     products: [],
-    loading: false
   },
   reducers: {},
 
   extraReducers: (builder) => {
     builder
-
-      // GET
       .addCase(getProducts.fulfilled, (state, action) => {
         state.products = action.payload;
       })
 
-      // ADD
       .addCase(addProduct.fulfilled, (state, action) => {
         state.products.push(action.payload);
       })
 
-      // DELETE
       .addCase(deleteProduct.fulfilled, (state, action) => {
         state.products =
           state.products.filter(p => p.id !== action.payload);
       })
 
-      // UPDATE
       .addCase(updateProduct.fulfilled, (state, action) => {
         const index = state.products.findIndex(
           p => p.id === action.payload.id
         );
         state.products[index] = action.payload;
       });
-  }
+  },
 });
 
 export default productSlice.reducer;
+
+
