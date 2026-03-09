@@ -26,6 +26,13 @@
       "price": "6000",
       "category": "wireless",
       "added_date": "2026-02-15T15:33:26.807Z"
+    },
+    {
+      "id": "d66b",
+      "name": "lapto",
+      "price": "600000",
+      "category": "Gamingg",
+      "added_date": "2026-02-26T05:35:54.984Z"
     }
   ]
 }
